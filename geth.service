@@ -1,0 +1,9 @@
+[Unit]
+Description=Ethereum go client fast testnet
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/geth --testnet --fast --rpc --rpcport "8545" --rpcaddr "0.0.0.0" --rpccorsdomain "*" --datadir "/big/fast-testnet"
+
+[Install]
+WantedBy=default.target
