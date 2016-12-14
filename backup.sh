@@ -14,3 +14,5 @@ tar -czvf ${file} ${folder}
 cat ${file} | split -d -b ${size} - ${file}
 
 echo "Ready..."
+
+
